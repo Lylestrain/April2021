@@ -28,17 +28,70 @@
         }
 
         #navigation {
-            min-height: 35px;
+            min-height: 60px;
+            margin-bottom: 20px;
             background-color: darkblue;
         }
 
         #hero {
-            min-height: 450px;
+            min-height: 340px;
             background-color: yellowgreen;
+            margin-bottom: 40px;
+        }
+
+        #threeBoxes, #fourBoxes {
+            display: flex;
+            justify-content: space-between;
         }
 
         #threeBoxes div {
-            min-height: 250px;
+            min-width: 200px;
+            height: 200px;
+            flex: 1 0 auto;
+            background-color: whitesmoke;
+            border: 3px solid rebeccapurple;
+            margin-bottom: 40px;
+        }
+
+        #threeBoxes div:nth-child(2) {
+            margin: 0 8px;
+        }
+
+        #content1 {
+            min-height: 340px;
+            background-color: whitesmoke;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #fourBoxes div {
+            min-height: 160px;
+            flex: 1 0 auto;
+            margin-bottom: 40px;
+        }
+
+        #fourBoxes div:nth-child(1) {
+            background-color: blue;
+        }
+
+        #fourBoxes div:nth-child(2) {
+            background-color: green;
+        }
+
+        #fourBoxes div:nth-child(3) {
+            background-color: yellow;
+        }
+
+        #fourBoxes div:nth-child(4) {
+            background-color: red;
+        }
+
+        #footer {
+            min-height: 65px;
             background-color: whitesmoke;
         }
 
@@ -54,6 +107,15 @@
             <div></div>
             <div></div>
         </div>
+        <div id="content1"></div>
+        <h2>GALLERY</h2>
+        <div id="fourBoxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="footer"></div>
     </div>
     
 </body>
