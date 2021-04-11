@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: sandybrown;
+        }
+
+        #container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #header {
+            min-height: 80px;
+            background-color: white;
+        }
+
+        #navigation {
+            min-height: 60px;
+            margin-bottom: 20px;
+            background-color: darkblue;
+            position: relative;
+        }
+
+        #navigation a {
+            color: whitesmoke;
+            text-decoration: none;
+            font-size: 1.5rem;
+            line-height: 60px;
+            padding: 8px 24px;
+        }
+
+        #navigation a:last-child {
+            position: absolute;
+            right: 0px;
+            top:-10px;
+           /* background-image: url(images/facebook2.png); */
+            background-size: cover;
+            display: block;
+            height: 48px;
+        }
+
+        #hero {
+            min-height: 400px;
+            background-color: yellowgreen;
+            margin-bottom: 40px;
+
+            background-image: url(images/hero.jpg);
+            background-size: cover;
+            background-position: center 45%;
+        }
+
+        #threeBoxes, #fourBoxes {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #threeBoxes div {
+            min-width: 200px;
+            height: 200px;
+            flex: 1 0 auto;
+            background-color: whitesmoke;
+            border: 3px solid rebeccapurple;
+            margin-bottom: 40px;
+        }
+
+        #threeBoxes div:nth-child(2) {
+            margin: 0 8px;
+        }
+
+        #content1 {
+            min-height: 340px;
+            background-color: whitesmoke;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #fourBoxes div {
+            min-height: 160px;
+            flex: 1 0 auto;
+            margin-bottom: 40px;
+        }
+
+        #fourBoxes div:nth-child(1) {
+            background-color: blue;
+            background-size: cover;
+            background-position: center ;
+        }
+
+        #fourBoxes div:nth-child(2) {
+            background-color: green;
+            background-size: cover;
+            background-position: center ;
+        }
+
+        #fourBoxes div:nth-child(3) {
+            background-color: yellow;
+            background-size: cover;
+            background-position: center ;
+        }
+
+        #fourBoxes div:nth-child(4) {
+            background-color: red;
+            background-size: cover;
+            background-position: center ;
+        }
+
+        #footer {
+            min-height: 65px;
+            background-color: whitesmoke;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <div id="navigation">
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Company</a>
+            <a href="#">Contacts</a>
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+        </div>
+        <div id="hero"></div>
+        <div id="threeBoxes">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="content1"></div>
+        <h2>GALLERY</h2>
+        <div id="fourBoxes">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+</body>
+</html>
