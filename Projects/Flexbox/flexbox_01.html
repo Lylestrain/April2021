@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
+    <h1>CSS Flexbox Course</h1>
     <article>
         <nav class="container">
             <div>Home</div>
@@ -17,6 +18,7 @@
         </nav>
     </article>
     <article>
+        <span>display: flex</span>
         <nav class="container" style="display: flex;">
             <div>Home</div>
             <div>Search</div>
@@ -24,6 +26,7 @@
         </nav>
     </article>
     <article>
+        <span>flex-direction: column</span>
         <nav class="container" style="display: flex; flex-direction: column;">
             <div>Home</div>
             <div>Search</div>
@@ -31,6 +34,7 @@
         </nav>
     </article>
     <article>
+        <span>justify-content: center</span>
         <nav class="container" style="display: flex; justify-content: center;">
             <div>Home</div>
             <div>Search</div>
@@ -38,10 +42,256 @@
         </nav>
     </article>
     <article>
-        <nav class="container" style="display: flex; justify-content: right;">
+        <span>justify-content: flex-end</span>
+        <nav class="container" style="display: flex; justify-content: flex-end;">
             <div>Home</div>
             <div>Search</div>
             <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>justify-content: space-around</span>
+        <nav class="container" style="display: flex; justify-content: space-around;">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>justify-content: space-evenly</span>
+        <nav class="container" style="display: flex; justify-content: space-evenly;">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>justify-content: space-between</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=logout margin-left: auto</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout" style="margin-left: auto;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=search margin-left: auto</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div class="home">Home</div>
+            <div class="search" style="margin-left: auto;">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=container div:flex: 1</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div class="home" style="flex: 1;">Home</div>
+            <div class="search" style="flex: 1;">Search</div>
+            <div class="logout" style="flex: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=search flex: 2</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div class="home" style="flex: 1;">Home</div>
+            <div class="search" style="flex: 2;">Search</div>
+            <div class="logout" style="flex: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home & logout flex: 1</span>
+        <nav class="container" style="display: flex; justify-content: space-between;">
+            <div class="home" style="flex: 1;">Home</div>
+            <div class="search">Search</div>
+            <div class="logout" style="flex: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=container height: 10em</span>
+        <nav class="container" style="display: flex; height: 10em;">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>align-items: flex-start</span>
+        <nav class="container" style="display: flex; height: 10em; align-items: flex-start;">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>align-items: flex-end</span>
+        <nav class="container" style="display: flex; height: 10em; align-items: flex-end;">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>align-items: center</span>
+        <nav class="container" style="display: flex; height: 10em; align-items: center;">
+            <div class="home">Home</div>
+            <div class="search">Search</div>
+            <div class="logout">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>align-items: center; justify-content: center</span>
+        <nav class="container" style="display: flex; height: 10em; align-items: center; justify-content: center;">
+            <div class="home">x</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-end flex-start</span>
+        <nav class="container" style="display: flex; height: 10em; align-items: center;">
+            <div class="home" style="align-self: flex-end;">Home</div>
+            <div class="search">Search</div>
+            <div class="logout" style="align-self: flex-start;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, class=container height: 15em</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; ">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, class=container height: 15em, justify-content: flex-end</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: flex-end; ">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, justify-content: center</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: center; ">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, justify-content: center, align-items: flex-end</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: center; align-items: flex-end;">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, justify-content: center, align-items: flex-start</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: center; align-items: flex-start">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, justify-content: center, align-items: center</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: center; align-items: center">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-direction: column, justify-content:  flex-end, align-items:  flex-end</span>
+        <nav class="container" style="display: flex; flex-direction: column; height: 15em; justify-content: flex-end; align-items: flex-end">
+            <div>Home</div>
+            <div>Search</div>
+            <div>Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>width: 300px</span>
+        <nav class="container" style="display: flex;">
+            <div style="width: 300px;">Home</div>
+            <div style="width: 300px;">Search</div>
+            <div style="width: 300px;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>width: 300px flex-wrap: wrap</span>
+        <nav class="container" style="display: flex; flex-wrap: wrap;">
+            <div style="width: 300px;">Home</div>
+            <div style="width: 300px;">Search</div>
+            <div style="width: 300px;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex: 1</span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex: 1;">Home</div>
+            <div class="logout" style="flex: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>flex-grow, flex-shrink, flex-basis </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex: 1;">Home</div>
+            <div class="logout" style="flex: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px ;">Home</div>
+            <div class="logout" style="flex-basis: 220px ;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-grow: 1 </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-grow: 1;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-grow: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-grow: 0 1 </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-grow: 0;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-grow: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-grow: 1 0 </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-grow: 1;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-grow: 0;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-grow: 1 5 </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-grow: 1;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-grow: 5;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-shrink: 1 (default behaviour)</span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-shrink: 1;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-shrink: 1;">Logout</div>
+        </nav>
+    </article>
+    <article>
+        <span>class=home logout, flex-basis: 220px flex-shrink: 0 5 </span>
+        <nav class="container" style="display: flex;">
+            <div class="home" style="flex-basis: 220px; flex-shrink: 0;">Home</div>
+            <div class="logout" style="flex-basis: 220px; flex-shrink: 5;">Logout</div>
         </nav>
     </article>
 </body>
