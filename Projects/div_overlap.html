@@ -6,27 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>div overlap</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         section {
-            border: 6px solid mediumturquoise;
             min-height: 500px;
+            display: flex;
+            width: 90%;
+            margin: 0 auto;
         }
 
         .text {
             flex: 1 0 50%;
+            height: 350px;
+            transform: translate(100px, 75px);
+            margin-left: -100px;
             background-color: navajowhite;
+            padding: 3rem;
+        }
+
+        .text h2 {
+            text-transform: uppercase;
+            font-size: 2rem;
+        }
+
+        .text h2 + a {
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-decoration: none;
+            color: saddlebrown;
+        }
+
+        .text h2 + a:hover {
+            text-decoration: underline;
+        }
+
+        .text p {
+            margin: 1rem 0;
+        }
+
+        .text p  a {
+            color: orangered;
+            text-decoration: none;
+        }
+
+        .text p  a:hover {
+            color: rgb(255, 123, 0);
+            text-decoration: none;
+        }
+
+        .button {
+            background-color: saddlebrown;
+            color: seashell;
+            border-radius: 4px;
+            padding: 4px 8px;
+            text-decoration: none;
         }
 
         .picture {
             flex: 1 0 50%;
+            background-color: brown;
             background-image: url(images/trees_01.jpg);
+            background-size: cover;
         }
     </style>
 </head>
 <body>
     <section id="goods">
         <div class="text">
-            <h2>Title here</h2>
-            <p>Something to be said can go here.</p>
+            <h2>The thing about trees</h2>
+            <a href="#">a progress update</a>
+            <p>Something to be said about trees. And even more can be said about trees such as <a href="#">you may feel</a>  needs to be said about trees can go here. Please follow us in this.</p>
+            <a href="#" class="button">read more</a>
 
         </div>
         <div class="picture">
