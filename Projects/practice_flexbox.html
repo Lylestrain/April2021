@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body {
+            background-color: lightslategray;
+        }
+
+        .pg_title {
+            font-size: 3rem;
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        article {
+            margin: 3rem 1rem;
+        }
+
+        #even_columns {
+            display: flex;
+        }
+
+        #even_columns > * {
+             width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header> <span class="pg_title">Flexbox Practice</span> </header>
+    <article>
+        <p>Default ( no styles appplied. )</p>
+        <div id="container">
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati? Quia similique repellendus porro ipsa officiis quod Consectetur optio, odit possimus minus cum debitis dolore?</p></div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati?</p></div>
+        </div>
+    </article>
+    <article>
+        <p>display: flex appplied.</p>
+        <div id="container" style="display: flex;">
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati? Quia similique repellendus porro ipsa officiis quod Consectetur optio, odit possimus minus cum debitis dolore?</p></div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati?</p></div>
+        </div>
+    </article>
+    <article>
+        <p>display: flex appplied and width:100%</p>
+        <div id="container" style="display: flex;">
+            <div class="column" style="width: 100%;">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column" style="width: 100%;">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati? Quia similique repellendus porro ipsa officiis quod Consectetur optio, odit possimus minus cum debitis dolore?</p></div>
+            <div class="column" style="width: 100%;">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati?</p></div>
+        </div>
+    </article>
+    <article>
+        <p>display: flex appplied and width:100% to every direct child.</p>
+        <div id="even_columns">
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati? Quia similique repellendus porro ipsa officiis quod Consectetur optio, odit possimus minus cum debitis dolore?</p></div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati?</p></div>
+        </div>
+    </article>
+    <article>
+        <p>display: flex appplied and width:100% to every direct child.</p>
+        <div id="even_columns">
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="card">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati? Quia similique repellendus porro ipsa officiis quod Consectetur optio, odit possimus minus cum debitis dolore?</p></div>
+            <div class="column">
+                <h2>Something</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique repellendus porro ipsa officiis quod nulla, iusto aliquam asperiores ea natus obcaecati?</p></div>
+        </div>
+    </article>
+
+    
+</body>
+</html>
