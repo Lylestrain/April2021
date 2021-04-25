@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles numbered Like a List</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            text-align: center;
+        }
+        .keysteps {
+            display: flex;
+            flex-flow: wrap;
+            padding: 0 1.5rem;
+        }
+
+        .stepitem {
+            flex: 1 0 50%;
+            counter-increment: article;
+            display: list-item;
+            font-size: 1rem;
+        }
+
+        .stepitem h2 {
+            margin-left: 2rem;
+        }
+
+        .stepitem::marker {
+            content: counter(article);
+            font-weight: bold;
+            font-size: 2em;
+            color: darkorange;
+            text-shadow: 2px 2px 4px green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Count Blocks like a numbered list</h1>
+    </header>
+    <section class="keysteps">
+        <article class="stepitem">
+            <h2>Title of one</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident unde nulla ex velit eligendi vero, voluptatem dolores sequi soluta dolorum nemo laboriosam? Enim nobis obcaecati, voluptatum tempore itaque libero quibusdam!</p>
+        </article>
+        <article class="stepitem">
+            <h2>Title of two</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident unde nulla ex velit eligendi vero, voluptatem dolores sequi soluta dolorum nemo laboriosam? Enim nobis obcaecati, voluptatum tempore itaque libero quibusdam!</p>
+        </article>
+        <article class="stepitem">
+            <h2>Title of three</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident unde nulla ex velit eligendi vero, voluptatem dolores sequi soluta dolorum nemo laboriosam? Enim nobis obcaecati, voluptatum tempore itaque libero quibusdam!</p>
+        </article>
+        <article class="stepitem">
+            <h2>Title of four</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident unde nulla ex velit eligendi vero, voluptatem dolores sequi soluta dolorum nemo laboriosam? Enim nobis obcaecati, voluptatum tempore itaque libero quibusdam!</p>
+        </article>
+    </section>
+    
+</body>
+</html>
